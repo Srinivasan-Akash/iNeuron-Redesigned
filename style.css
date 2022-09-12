@@ -13,7 +13,7 @@ body{
 
 
 #splash{
-  background-color: #233c7b;
+  background-color: #f28900;
   position: fixed;
   left: 0;
   top: 0;
@@ -33,8 +33,8 @@ body{
   flex-direction: column;
 }
 
-#splash h1{
-  color: #f28900;
+#splash .txt-type{
+  color: #233c7b;
   font-size: 250%;
 }
 
@@ -79,7 +79,7 @@ body{
   width: 100%;
   z-index: 10;
   background-color: #fff;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -87,11 +87,23 @@ body{
 
 div input{
   width: 60vw;
-  font-size: 1.5em;
+  font-size: 1.2em;
   border-radius: 10px;
+  opacity: 0.9;
   outline: none;
   padding: 10px;
-  border: 2px solid #000;
+  border: 1.9px solid #233c7b;
+  color: #233c7b;
+}
+
+
+
+::placeholder{
+  color: #233c7b;
+}
+
+::selection{
+  background-color: #f28900;
 }
 
 input:focus{
@@ -200,6 +212,14 @@ header {
     background-position: center center;
 }
 
+.slide-1{
+  margin-top: 30px;
+}
+
+.slide-1::before{
+  background-color: rgba(35, 60, 123, 0.5) !important;
+}
+
 .slide::before {
     content: "";
     position: absolute;
@@ -207,7 +227,7 @@ header {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(35, 60, 123, 0.8);
+    background-color: rgba(35, 60, 123, 0.7);
 }
 
 .slide-1 {
@@ -856,6 +876,8 @@ h5{
   height: 100vh;
 }
 
+
+
 .container,.team-members, .live, .AvgMain,.hard-work, footer, .preloader, .hall, .Products{
   scroll-snap-align: start;
   width: 100vw;
@@ -866,7 +888,7 @@ h5{
    overflow-y: scroll;
    height: 100vh;
    overflow-x: hidden;
- }
+ } 
 
 li span{
   font-size: 14px;
@@ -1044,13 +1066,4 @@ Footer{
     border-radius: 6px;
     box-shadow: 0 6px #999;
   }
-}
-
-
-@media only screen and (min-width: 1010px) and (max-width: 1200px){
-  
-}
-
-@media only screen and (max-width: 1200px){
-  
 }
